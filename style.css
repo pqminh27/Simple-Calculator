@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#fff, rgb(171, 206, 237));
+}
+
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 20px 20px;
+  background: #2cb838;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  outline: rgb(9, 139, 130) 10px solid;
+}
+
+.display {
+  height: 90px;
+  width: 100%;
+  outline: none;
+  border: solid 0.3;
+  text-align: right;
+  margin: 50px 0;
+  font-size: 40px;
+  color: rgb(14, 95, 142);
+  pointer-events: none;
+}
+
+input {
+  background: rgb(127, 225, 223);
+  border-radius: 8px;
+}
+
+.button {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.button button {
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+  color: #4b5121;
+  cursor: pointer;
+  background: linear-gradient(#e8e8e8, #d6d4d4);
+}
+
+.button .operator {
+  color: #182583;
+}
+
+.button button:hover {
+  transition: 0.5s;
+  background: linear-gradient(#d6d4d4, #e8e8e8);
+}
+
+.button button:active {
+  transform: scale(0.99);
+}
+
+button .opo {
+  background: linear-gradient(#6b5388, #331f4d);
+}
+
+button .opo:hover {
+  background: linear-gradient(#331f4d, #6b5388);
+}
+
+button.eq {
+  background: linear-gradient(#30ef99, #d4de10);
+}
+
+button.eq:hover {
+  background: linear-gradient(#d4de10, #30ef99);
+}
